@@ -1,0 +1,57 @@
+#myHeader {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    .navbar {
+        padding: $pd0;
+    }
+    //navigation
+    #navbarSupportedContent {
+        margin-left: auto;
+        flex-grow: unset;
+        ul.navbar-nav {
+            ul {
+                display: flex;
+                li {
+                    display: inline-block;
+                    padding: $pd1 $pd2;
+                    @include a_hover($color3, $fs1, $fw2, $color0);
+                }
+                li.tel_Contact {
+                    margin-right: $mg2;
+                    @include b_hover($border-radius2, $color0);
+                    @include a_hover($color2, $fs1, $fw2, $color0);
+                }
+            }
+            ul.page_Contact {
+                margin-left: $mg4;
+            }
+            ul.social_Contact {
+                li {
+                    padding: $pd1 $pd0;
+                }
+            }
+        }
+    }
+    // brand
+    .navbar-brand {
+        width: 70px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+#myHeader.banner--clone {
+    top: -100%;
+    transition: all 1s;
+}
+#myHeader.banner--clone.banner--stick {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: $color2;
+    .navbar-brand {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+#Teacher {
+    background-color: #dcd1f3;
+    position: relative;
+    > img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+    .T_imgContain {
+        overflow: hidden;
+        border-radius: $border-radius1 $border-radius1 0 0;
+        img {
+            width: 100%;
+            display: block;
+            transition: all 0.8s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    #T_content_Box {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        > div {
+            margin-top: $mg5;
+        }
+        .card {
+            height: 100%;
+            border-radius: $border-radius1;
+            transition: all 0.8s;
+            border: none;
+            p {
+                margin-bottom: 0;
+            }
+            .T_Nation {
+                color: $color0;
+                font-size: $fs0;
+                font-weight: $fw2;
+            }
+            .T_personName {
+                font-size: $fs3;
+                font-weight: $fw2;
+            }
+            &:hover {
+                box-shadow: 0 1em 1em #00000033;
+            }
+        }
+    }
+}

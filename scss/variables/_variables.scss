@@ -1,0 +1,69 @@
+// color
+$color0: #b61984;
+$color1: #ee5b54;
+$color2: #fff;
+$color3: #000;
+$color4: #191919;
+$color5: #ffffff27;
+$color6: #00000022;
+$color7: #ffffff12;
+// padding
+$pd0: 0em;
+$pd1: 0.25rem;
+$pd2: 0.5rem;
+$pd3: 1rem;
+$pd4: 1.5rem;
+$pd5: 2rem;
+$pd6: 3rem;
+$pd7: 4rem;
+$pd8: 7rem;
+$pd9: 9rem;
+// margin
+$mg0: 0rem;
+$mg1: 0.25rem;
+$mg2: 0.5rem;
+$mg3: 1rem;
+$mg4: 1.5rem;
+$mg5: 2rem;
+// font-size
+$fs0: 0.8rem;
+$fs1: 1rem;
+$fs2: 1.2rem;
+$fs3: 1.5rem;
+$fs4: 1.8rem;
+$fs5: 2rem;
+$fs6: 3.5rem;
+$fs7: 2.5rem;
+// font-weight
+$fw0: 300;
+$fw1: 400;
+$fw2: 500;
+$fw3: 700;
+$fw4: 900;
+// border-radius
+$border-radius1: 1rem;
+$border-radius2: 1.5rem;
+//Page Link hover effect
+@mixin a_hover($_fcolor, $_fs, $_fw, $_scolor) {
+    a {
+        color: $_fcolor;
+        font-size: $_fs;
+        font-weight: $_fw;
+        transition: all 0.5s;
+        text-decoration: none;
+    }
+    &:hover {
+        a {
+            color: $_scolor;
+        }    
+    }
+}
+//Button hover effect
+@mixin b_hover($_br, $_color) {
+    border-radius: $_br;
+    box-shadow: inset 0 0 0 5rem $_color;
+    transition: all 0.5s;
+    &:hover {
+        box-shadow: inset 0 0 0 1px $_color;
+    }
+}

@@ -1,0 +1,58 @@
+#myFooter {
+    position: relative;
+    background-image: url(./../images/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: $pd9 0;
+    .container {
+        color: $color2;
+        .mF_Title {
+            font-size: $fs3;
+            margin-bottom: $mg4;
+        }
+        p {
+            margin-bottom: $mg1;
+        }
+        #mF_contactUs {
+            padding: 0 $pd4;
+            ul {
+                margin-top: $mg4;
+                li  {
+                    @include a_hover($color2, $fs1, $fw1, $color3);
+                }   
+            }
+        }
+        #mF_quickLink {
+            padding: 0 $pd4;
+            li {
+                @include a_hover($color2, $fs1, $fw1, $color5);
+                padding: $pd2 0;
+                border-bottom: 1px solid $color6;
+            }
+        }
+        #mF_About {
+            @extend #mF_quickLink
+        }
+        #mF_Newsletter {
+            display: flex;
+            flex-direction: column;
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-grow: 1;
+                > div {
+                    padding: $pd2 0;
+                    border: 1px solid $color7;
+                    margin: $mg1 0;
+                    text-align: center;
+                    border-radius: $border-radius2;
+                }
+                .mF_Newsletter_Sub {
+                    @include b_hover($border-radius2, $color2);
+                    @include a_hover($color3, $fs1, $fw1, $color2);
+                }
+            }
+        }
+    }
+}

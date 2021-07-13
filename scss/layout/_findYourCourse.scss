@@ -1,0 +1,60 @@
+#findYourCourse {
+    position: relative;
+    > img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+    #fYC_containBox {
+        position: relative;
+        z-index: 10;
+        padding-top: $pd8;
+        justify-content: space-evenly;
+        padding-bottom: $pd5;
+        > div {
+            padding: $pd6 0;
+        }
+        form {
+            padding: $pd6 $pd5;
+            box-shadow: 0 1em 1em #00000033;
+            background-color: $color2;
+            border-radius: $border-radius1;
+            .form-title {
+                font-size: $fs7;
+                font-weight: $fw3;
+                white-space: nowrap;
+            }
+            .input-group {
+                margin-bottom: $mg3;
+                .form-control {
+                    font-size: $fs0;
+                    border-radius: $border-radius1;
+                    padding-left: 2rem;
+                }
+                i {
+                    color: $color0;
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(50%);
+                    left: 1.5rem;
+                    z-index: 10;
+                }
+            }
+            .row {
+                padding: $pd5 0;
+            }
+            .form-submit {
+                padding: $pd3 $pd7;
+                color: $color2;
+                border: none;
+                font-weight: $fw2;
+                font-size: $fs0;
+                @include b_hover($border-radius2, $color0);
+                &:hover {
+                    color: $color0;
+                }
+            }
+        }
+    }
+}

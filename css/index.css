@@ -1,0 +1,376 @@
+#myHeader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+#myHeader .navbar {
+  padding: 0em;
+}
+
+#myHeader #navbarSupportedContent {
+  margin-left: auto;
+  flex-grow: unset;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul {
+  display: flex;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li a {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li:hover a {
+  color: #b61984;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li.tel_Contact {
+  margin-right: 0.5rem;
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 0 5rem #b61984;
+  transition: all 0.5s;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li.tel_Contact:hover {
+  box-shadow: inset 0 0 0 1px #b61984;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li.tel_Contact a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul li.tel_Contact:hover a {
+  color: #b61984;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul.page_Contact {
+  margin-left: 1.5rem;
+}
+
+#myHeader #navbarSupportedContent ul.navbar-nav ul.social_Contact li {
+  padding: 0.25rem 0em;
+}
+
+#myHeader .navbar-brand {
+  width: 70px;
+}
+
+#myHeader .navbar-brand img {
+  max-width: 100%;
+}
+
+#myHeader.banner--clone {
+  top: -100%;
+  transition: all 1s;
+}
+
+#myHeader.banner--clone.banner--stick {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: #fff;
+}
+
+#myHeader.banner--clone.banner--stick .navbar-brand {
+  display: none;
+}
+
+#Carousel {
+  position: relative;
+}
+
+#Carousel > img:first-of-type {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#Carousel > img:last-of-type {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#Carousel #Carousel_contentBox {
+  align-items: center;
+  padding: 4rem 0;
+}
+
+#Carousel #Carousel_contentBox img {
+  display: block;
+  width: 100%;
+}
+
+#Carousel #Carousel_contentBox h6 {
+  font-size: 1.2rem;
+  color: #b61984;
+}
+
+#Carousel #Carousel_contentBox p {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: initial;
+}
+
+#Teacher {
+  background-color: #dcd1f3;
+  position: relative;
+}
+
+#Teacher > img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#Teacher .T_imgContain {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#Teacher .T_imgContain img {
+  width: 100%;
+  display: block;
+  transition: all 0.8s;
+}
+
+#Teacher .T_imgContain img:hover {
+  transform: scale(1.05);
+}
+
+#Teacher #T_content_Box {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+#Teacher #T_content_Box > div {
+  margin-top: 2rem;
+}
+
+#Teacher #T_content_Box .card {
+  height: 100%;
+  border-radius: 1rem;
+  transition: all 0.8s;
+  border: none;
+}
+
+#Teacher #T_content_Box .card p {
+  margin-bottom: 0;
+}
+
+#Teacher #T_content_Box .card .T_Nation {
+  color: #b61984;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#Teacher #T_content_Box .card .T_personName {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#Teacher #T_content_Box .card:hover {
+  box-shadow: 0 1em 1em #00000033;
+}
+
+#findYourCourse {
+  position: relative;
+}
+
+#findYourCourse > img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#findYourCourse #fYC_containBox {
+  position: relative;
+  z-index: 10;
+  padding-top: 7rem;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+#findYourCourse #fYC_containBox > div {
+  padding: 3rem 0;
+}
+
+#findYourCourse #fYC_containBox form {
+  padding: 3rem 2rem;
+  box-shadow: 0 1em 1em #00000033;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+#findYourCourse #fYC_containBox form .form-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#findYourCourse #fYC_containBox form .input-group {
+  margin-bottom: 1rem;
+}
+
+#findYourCourse #fYC_containBox form .input-group .form-control {
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+}
+
+#findYourCourse #fYC_containBox form .input-group i {
+  color: #b61984;
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+  left: 1.5rem;
+  z-index: 10;
+}
+
+#findYourCourse #fYC_containBox form .row {
+  padding: 2rem 0;
+}
+
+#findYourCourse #fYC_containBox form .form-submit {
+  padding: 1rem 4rem;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 0 5rem #b61984;
+  transition: all 0.5s;
+}
+
+#findYourCourse #fYC_containBox form .form-submit:hover {
+  box-shadow: inset 0 0 0 1px #b61984;
+}
+
+#findYourCourse #fYC_containBox form .form-submit:hover {
+  color: #b61984;
+}
+
+#myFooter {
+  position: relative;
+  background-image: url(./../images/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 9rem 0;
+}
+
+#myFooter .container {
+  color: #fff;
+}
+
+#myFooter .container .mF_Title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#myFooter .container p {
+  margin-bottom: 0.25rem;
+}
+
+#myFooter .container #mF_contactUs {
+  padding: 0 1.5rem;
+}
+
+#myFooter .container #mF_contactUs ul {
+  margin-top: 1.5rem;
+}
+
+#myFooter .container #mF_contactUs ul li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+#myFooter .container #mF_contactUs ul li:hover a {
+  color: #000;
+}
+
+#myFooter .container #mF_quickLink, #myFooter .container #mF_About {
+  padding: 0 1.5rem;
+}
+
+#myFooter .container #mF_quickLink li, #myFooter .container #mF_About li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #00000022;
+}
+
+#myFooter .container #mF_quickLink li a, #myFooter .container #mF_About li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+#myFooter .container #mF_quickLink li:hover a, #myFooter .container #mF_About li:hover a {
+  color: #ffffff27;
+}
+
+#myFooter .container #mF_Newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+#myFooter .container #mF_Newsletter > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#myFooter .container #mF_Newsletter > div > div {
+  padding: 0.5rem 0;
+  border: 1px solid #ffffff12;
+  margin: 0.25rem 0;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+#myFooter .container #mF_Newsletter > div .mF_Newsletter_Sub {
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 0 5rem #fff;
+  transition: all 0.5s;
+}
+
+#myFooter .container #mF_Newsletter > div .mF_Newsletter_Sub:hover {
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+#myFooter .container #mF_Newsletter > div .mF_Newsletter_Sub a {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+#myFooter .container #mF_Newsletter > div .mF_Newsletter_Sub:hover a {
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

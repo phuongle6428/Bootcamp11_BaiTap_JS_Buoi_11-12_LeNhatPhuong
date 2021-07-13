@@ -1,0 +1,33 @@
+#Carousel {
+    position: relative;
+    @mixin C_imgBase {
+        display: block;
+        width: 100%;
+    }
+    > img:first-of-type {
+        @include C_imgBase;
+        position: absolute;
+        top: 0;
+    }
+    > img:last-of-type {
+        @include C_imgBase;
+        position: absolute;
+        bottom: 0;
+    }
+    #Carousel_contentBox {
+        align-items: center;
+        padding: $pd7 0;
+        img {
+            @include C_imgBase;
+        }
+        h6 {
+            font-size: $fs2;
+            color: $color0;
+        }
+        p {
+            font-size: $fs6;
+            font-weight: $fw3;
+            line-height: initial;
+        }
+    }
+}
